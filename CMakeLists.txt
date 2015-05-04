@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.4.4)
-if(${CMAKE_MAJOR_VERSION} GREATER 3)
+if(NOT(${CMAKE_MAJOR_VERSION} LESS 3))
     cmake_policy(SET CMP0042 NEW)
 endif()
 set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS ON)
